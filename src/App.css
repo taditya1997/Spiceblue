@@ -1,0 +1,170 @@
+.App {
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+.App>.container
+{
+display:flex;
+background-color: pink;
+flex-direction: column;
+height:10vh;
+width: 250px;
+align-items: center;
+margin: 0px;
+overflow: unset;
+
+}
+.container>.heading
+{
+  display: flex;
+  justify-content: space-between;
+  width:100%;
+  border: 1.5px #DCDCDC solid ;
+  margin:0px;
+  border-radius: 2px;
+  height:4vh;
+  background-color:#F5F5F5;
+  font-weight: 500;
+  
+}
+.heading>button
+{
+  height:100%;
+  width:15%;
+  background-color: #F5F5F5;
+ 
+  border-top: 0px ;
+  border-left:  1.5px  #DCDCDC solid;
+  border-right: 0px;
+  border-bottom: 0px;
+  cursor:pointer;
+}
+.container>.todos_assigned
+{
+  display:flex;
+  flex-direction: column;
+  background-color: #ADD8E6;
+  width:250px;
+  font-size: x-small;
+  justify-content: center;
+  margin:3px;
+  border: 1.5px #DCDCDC solid ;
+  border-radius: 6px;
+
+}
+.todos_assigned>.items
+{
+  display:flex;
+  flex-direction:column;
+  border: 1.5px #DCDCDC solid ;
+  width:100%;
+  margin-bottom: 3px;
+
+}
+.items>.Todo-Section
+{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  height:4vh;
+  
+}
+.Todo-Section>.first
+{
+  flex:0.33;
+  flex-direction: column;
+  margin:0px;
+  justify-content: left;
+}
+.Todo-Section>.second
+{
+  flex:0.33;
+  flex-direction: row;
+  margin:0px;
+  display:flex;
+  justify-content: space-around;
+}
+.Todo-Section>.third
+{
+  flex:0.33;
+  flex-direction: row;
+  margin:0px;
+  display:flex;
+  justify-content: flex-end;
+}
+.container>.task
+{
+  display:flex;
+  text-transform: capitalize;
+}
+.task>.description
+{
+  display:flex;
+  flex-direction: column;
+}
+.description>label
+{
+  display:flex;
+  flex-direction: row;
+  margin:2px;
+}
+.description>input{
+  max-width: 80%;
+  outline-width: thin;
+  height:3vh;
+}
+.task>.date-time
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  
+}
+.date-time>.date
+{
+  display: flex;
+  flex-direction: column;
+ 
+}
+.date>.label
+{
+  display:flex;
+  flex-direction: row;
+  
+}
+.date>input{
+  display: flex;
+  flex-direction: row;
+  max-width: 60%;
+}
+.date-time>.time{
+  display: flex;
+  flex-direction: column;
+  }
+  .task>.assignuser
+  {
+    display: flex;
+    flex-direction: column;
+    margin:2px;
+  }
+  .assignuser>label{
+    margin:1px;
+  }
+  .task>.allbuttons
+  {
+    display: flex;
+    flex-direction: row;
+    margin:3px;
+    padding: 4px;
+    justify-content: space-between;
+  }
+  
+  .allbuttons>.buttons{
+display: flex;
+flex-direction:row;
+  }
+  .buttons>button
+  {
+    margin:1px;
+  }
